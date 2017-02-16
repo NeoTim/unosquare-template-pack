@@ -16,7 +16,7 @@
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
 
-    <Icon Package="{63b2059e-1711-455f-9d05-02ed4a439082}" ID="400" />
+    <Icon>template.ico</Icon>
     <TemplateID>aspnetcore.unosquare.templates</TemplateID>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
   </TemplateData>

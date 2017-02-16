@@ -5,7 +5,7 @@
     <DefaultName>CompositeWorker</DefaultName>
 
     <ProjectType>CSharp</ProjectType>
-    <ProjectSubType>Windows</ProjectSubType>
+    <ProjectSubType>.NET Core</ProjectSubType>
     <RequiredFrameworkVersion>4.5.2</RequiredFrameworkVersion>
     <CreateInPlace>true</CreateInPlace>
     <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
@@ -16,12 +16,13 @@
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
 
-    <Icon Package="{63b2059e-1711-455f-9d05-02ed4a439082}" ID="400" />
+    <Icon>template.ico</Icon>
     <TemplateID>compositeworker.unosquare.templates</TemplateID>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
   </TemplateData>
   <TemplateContent>
     <Project File="UnosquareCompositeWorker.xproj" ReplaceParameters="true">
+      <ProjectItem OpenInEditor="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>
