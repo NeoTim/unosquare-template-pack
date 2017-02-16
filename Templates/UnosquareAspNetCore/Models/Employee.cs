@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SwanAspNetCore.Models
+namespace UnosquareAspNetCore.Models
 {
     public class Employee
     {

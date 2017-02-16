@@ -26,8 +26,8 @@
     <ProjectGuid>{3C62333B-6799-435B-BC66-A4AC104A091D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SwanTemplatePack</RootNamespace>
-    <AssemblyName>SwanTemplatePack</AssemblyName>
+    <RootNamespace>UnosquareTemplatePack</RootNamespace>
+    <AssemblyName>UnosquareTemplatePack</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>
@@ -203,8 +203,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <TemplateReference Include="SwanAspNetCore.xproj">
-      <PathToProject>../Templates/SwanAspNetCore/SwanAspNetCore.xproj</PathToProject>
+    <TemplateReference Include="UnosquareAspNetCore.xproj">
+      <PathToProject>../Templates/UnosquareAspNetCore/UnosquareAspNetCore.xproj</PathToProject>
     </TemplateReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

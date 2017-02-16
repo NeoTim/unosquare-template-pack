@@ -7,7 +7,7 @@
   <TemplateInfo Path="CSharp\Web"/>
   <Replacements Include="*.*" Exclude="ReadMe.html;*.vstemplate;*.csproj;*.fsproj;*.vbproj;*.jpg;*.png;*.ico;_preprocess.xml;_project.vstemplate.xml">
     <!-- Find and replace the root namespace with the generated one. -->
-    <add key="SwanAspNetCore" value="$safeprojectname$"/>
+    <add key="UnosquareAspNetCore" value="$safeprojectname$"/>
     <!-- Replace the ProjectGuid (Unique ID for the project) with a generated GUID. Replace this with your own. -->
     <add key="d12aef7f-5910-4ca6-9167-7406039c9ec4" value="$guid1$"/>
   </Replacements>

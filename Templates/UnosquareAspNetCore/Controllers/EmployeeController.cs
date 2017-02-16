@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using SwanAspNetCore.Models;
+using UnosquareAspNetCore.Models;
 using System.Collections.Generic;
 using System.Linq;
 using Unosquare.Tubular;
 using Unosquare.Tubular.ObjectModel;
 
-namespace SwanAspNetCore.Controllers
+namespace UnosquareAspNetCore.Controllers
 {
     [Route("api/[controller]"), Authorize]
     public class EmployeeController : Controller

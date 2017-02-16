@@ -12,7 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Unosquare.Swan.AspNetCore;
 
-namespace SwanAspNetCore
+namespace UnosquareAspNetCore
 {
     public class Startup
     {
@@ -76,7 +76,7 @@ namespace SwanAspNetCore
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Configuration["SymmetricSecurityKey"])),
 
                 ValidateIssuer = true,
-                ValidIssuer = "SwanAspNetCore",
+                ValidIssuer = "UnosquareAspNetCore",
 
                 ValidateAudience = true,
                 ValidAudience = "Unosquare",

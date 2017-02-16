@@ -2,11 +2,11 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Id="ae9d6285-3f2a-0001-9021-82eb4d8b8c74" Version="0.8" Language="en-US" Publisher="Unosquare" />
-    <DisplayName>SWAN ASP.NET Core Template Pack</DisplayName>
-    <Description xml:space="preserve">A template for ASP.NET Core</Description>
-    <MoreInfo>https://github.com/unosquare/swan/</MoreInfo>
+    <DisplayName>Unosquare .NET Core Template Pack</DisplayName>
+    <Description xml:space="preserve">A template for .NET Core</Description>
+    <MoreInfo>https://github.com/unosquare/unosquare-template-pack/</MoreInfo>
     <License>Resources\LICENSE</License>
-    <ReleaseNotes>https://github.com/unosquare/swan/blob/master/README.md</ReleaseNotes>
+    <ReleaseNotes>https://github.com/unosquare/unosquare-template-pack/blob/master/README.md</ReleaseNotes>
     <Icon>Resources\Icon.png</Icon>
     <PreviewImage>Resources\Preview.png</PreviewImage>
     <Tags>asp.net, core, template</Tags>

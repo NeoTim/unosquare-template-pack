@@ -1,5 +1,5 @@
 packages
-Templates/SwanAspNetCore/Properties/launchSettings.json
+Templates/UnosquareAspNetCore/Properties/launchSettings.json
 template-report.xml
 project.lock.json
 node_modules
