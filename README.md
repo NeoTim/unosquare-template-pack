@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/cucopxekgqnexxq8?svg=true)](https://ci.appveyor.com/project/geoperez/unosquare-template-pack)
+
 # Unosquare Net Core Template Pack
 
 [Download](http://vsixgallery.com/extension/ae9d6285-3f2a-0001-9021-82eb4d8b8c74/)
