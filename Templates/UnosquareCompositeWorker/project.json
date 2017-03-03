@@ -5,6 +5,7 @@
   },
 
   "dependencies": {
+    "EmbedIO.LiteLibWebApi": "1.0.0",
     "Microsoft.NETCore.App": "1.1.0",
     "Unosquare.Swan": "0.12.0"
   },

@@ -14,7 +14,7 @@
     "Microsoft.Extensions.Options.ConfigurationExtensions": "1.1.0",
     "Microsoft.NETCore.App": "1.1.0",
     "Unosquare.Swan.AspNetCore": "0.9.0",
-    "Tubular.ServerSide": "1.1.3"
+    "Tubular.ServerSide": "1.2.8"
   },
 
   "tools": {
