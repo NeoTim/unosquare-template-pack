@@ -100,7 +100,7 @@ namespace UnosquareAspNetCore
                 obj["test"] = "OK";
                 return Task.FromResult(obj);
             }, 
-            forceHttps: false); // TODO: We recommend use HTTPS but the default behaviour is off
+            forceHttps: false); // TODO: We recommend use HTTPS but the default behavior is off
 
             app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseMvc();
