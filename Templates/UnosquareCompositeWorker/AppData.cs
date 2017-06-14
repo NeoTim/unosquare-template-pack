@@ -9,6 +9,7 @@ namespace UnosquareCompositeWorker
         {
         }
 
+        // TODO: Include your DTOs here
         public LiteDbSet<Order> Orders { get; set; }
     }
 }

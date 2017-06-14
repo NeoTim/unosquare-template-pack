@@ -99,7 +99,8 @@ namespace UnosquareAspNetCore
                 // This action is optional to add properties to the Bearer token
                 obj["test"] = "OK";
                 return Task.FromResult(obj);
-            });
+            }, 
+            forceHttps: false); // TODO: We recommend use HTTPS but the default behaviour is off
 
             app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseMvc();
