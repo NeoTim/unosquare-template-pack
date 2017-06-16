@@ -21,10 +21,12 @@
         ]);
 
     angular.module('app.controllers', ['tubular.services'])
-        .controller('titleController', [
+        .controller('navigationCtrl', [
             '$scope', '$route', 'tubularHttp', '$location', function ($scope, $route, tubularHttp, $location) {
                 var me = this;
                 me.content = "Home";
+                me.user = "Admin";
+                me.isAnonymousView = me.content === 'Login';
 
                 $scope.$on('$routeChangeSuccess', function () {
                     me.content = $route.current.title;
@@ -34,6 +36,12 @@
                         $location.path("/Login");
                     }
                 });
+
+                $scope.logout = function () {
+                    tubularHttp.removeAuthentication();
+                    me.isAnonymousView = true;
+                    document.location = '/Login';
+                }
             }
         ])
         .controller('gridCtrl', [

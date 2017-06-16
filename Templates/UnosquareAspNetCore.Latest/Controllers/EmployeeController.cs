@@ -11,17 +11,29 @@ namespace UnosquareAspNetCore.Controllers
     [Route("api/[controller]"), Authorize]
     public class EmployeeController : Controller
     {
-        // TODO: Change to database
-        readonly List<Employee> List = new List<Employee>
+        readonly static List<Employee> List = new List<Employee>();
+
+        public EmployeeController()
         {
-            new Employee { Title = "Senior Developer", Name = "Mario Di Vece" },
-            new Employee { Title = "Intern", Name = "Babu" }
-        };
+            if(List.Count == 0)
+            {
+                for (int i = 0; i < 500; i++)
+                {
+                    List.Add(new Employee { Id = i, Title = $"Senior Developer {i}", Name = $"Dev Name {i}" });
+                }
+            }
+        }
 
         [HttpPost, Route("paged")]
         public object GridData([FromBody] GridDataRequest request)
         {
             return request.CreateGridDataResponse(List.AsQueryable());
+        }
+
+        [HttpGet, Route("{id}")]
+        public object Get(int id)
+        {
+            return List.Where(e => e.Id == id).FirstOrDefault();
         }
     }
 }

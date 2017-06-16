@@ -1,6 +1,5 @@
 ﻿<div class="container" ng-controller="gridCtrl">
-    <tb-grid server-url="/api/employee/paged" require-authentication="true"
-             name="samplegrid" page-size="20" class="row">
+    <tb-grid server-url="/api/employee/paged" require-authentication="true" name="samplegrid" page-size="20" class="row">
         <!-- Main full-width container -->
         <div class="col-md-12">
             <!-- Top toolbar nested row -->
@@ -22,6 +21,12 @@
                         <tb-grid-table class="table tubular-grid-table table-bordered table-responsive table-striped table-hover">
                             <!-- Columns Definition -->
                             <tb-column-definitions>
+                                <tb-column name="Id" searchable="false" sortable="true" column-type="numeric">
+                                    <tb-column-filter></tb-column-filter>
+                                    <tb-column-header>
+                                        <span>{{label}}</span>
+                                    </tb-column-header>
+                                </tb-column>
                                 <tb-column name="Title" searchable="true" sortable="true">
                                     <tb-column-filter></tb-column-filter>
                                     <tb-column-header>
@@ -46,6 +51,11 @@
                                 </tb-row-template>
                                 <!-- General rows -->
                                 <tb-row-template ng-repeat="row in $component.rows" row-model="row" selectable="false">
+                                    <tb-cell-template column-name="Id" class="text-center">
+                                        <button class="btn btn-xs btn-table" ng-click="row.editPopup('/views/popups/editPopup.html')">
+										{{row.Id}}
+									</button>
+                                    </tb-cell-template>
                                     <tb-cell-template>{{row.Title}}</tb-cell-template>
                                     <tb-cell-template>{{row.Name}}</tb-cell-template>
                                 </tb-row-template>

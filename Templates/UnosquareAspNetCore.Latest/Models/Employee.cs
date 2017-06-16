@@ -6,6 +6,8 @@ namespace UnosquareAspNetCore.Models
 {
     public class Employee
     {
+        public int Id { get; set; }
+        
         /// <summary>The full name of the employee.</summary>
         public string Name { get; set; }
 
