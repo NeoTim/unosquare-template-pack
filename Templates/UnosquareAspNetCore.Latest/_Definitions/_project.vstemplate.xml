@@ -1,0 +1,30 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Unosquare Starter Application (.NET Core)</Name>
+    <Description>A basic web application that makes it easy to get started with Unosquare Stack.</Description>
+    <DefaultName>WebApplication</DefaultName>
+
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>Web</ProjectSubType>
+    <RequiredFrameworkVersion>4.5.2</RequiredFrameworkVersion>
+    <CreateInPlace>true</CreateInPlace>
+    <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
+
+    <SortOrder>1001</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+
+    <Icon>template.ico</Icon>
+    <TemplateID>aspnetcore.unosquare.templates</TemplateID>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="UnosquareAspNetCore.xproj" ReplaceParameters="true">
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <ProjectItem OpenInEditor="true" TargetFileName="EmployeeController.cs">EmployeeController.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
