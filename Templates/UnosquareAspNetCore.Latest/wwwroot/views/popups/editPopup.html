@@ -1,0 +1,18 @@
+<tb-form server-url="/api/employee/" model-key="{{Model.Id}}" model="Model" server-save-url="/api/employee/save">
+    <div class="modal-header">
+        <h3 class="modal-title">Edit Employee</h3>
+    </div>
+    <div class="modal-body">
+        <tb-simple-editor name="Id" show-label="true" required="true" read-only="true"></tb-simple-editor>
+        <tb-simple-editor name="Title" label="Title" show-label="true" placeholder="" required="true" read-only="false"></tb-simple-editor>
+        <tb-simple-editor name="Name" label="Name" show-label="true" placeholder="" required="true" read-only="false"></tb-simple-editor>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="savePopup()" ng-disabled="!Model.$valid()">
+			Save
+		</button>
+        <button class="btn btn-danger" ng-click="closePopup()">
+			Cancel
+		</button>
+    </div>
+</tb-form>
